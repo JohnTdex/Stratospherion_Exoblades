@@ -1,0 +1,13 @@
+{
+  "itemGroup.exoblade": "Exoblade Tab",
+  "block.exoblade.example_block": "Example Block",
+  "item.exoblade.example_item": "Example Item",
+
+  "exoblade.configuration.title": "Exoblade Configs",
+  "exoblade.configuration.section.exoblade.common.toml": "Exoblade Configs",
+  "exoblade.configuration.section.exoblade.common.toml.title": "Exoblade Configs",
+  "exoblade.configuration.items": "Item List",
+  "exoblade.configuration.logDirtBlock": "Log Dirt Block",
+  "exoblade.configuration.magicNumberIntroduction": "Magic Number Text",
+  "exoblade.configuration.magicNumber": "Magic Number"
+}
