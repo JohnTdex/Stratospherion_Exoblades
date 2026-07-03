@@ -46,7 +46,7 @@ authors="JohnTdex/Lyron" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Example mod description.
+Stratoblade (Exoblade) adds a set of custom exotic material blades and tools to Minecraft.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.

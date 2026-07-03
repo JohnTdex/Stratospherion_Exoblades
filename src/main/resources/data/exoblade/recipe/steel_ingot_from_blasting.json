@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "exoblade:impure_steel"
+  },
+  "result": {
+    "id": "exoblade:steel_ingot"
+  },
+  "experience": 0.5,
+  "cookingtime": 100
+}

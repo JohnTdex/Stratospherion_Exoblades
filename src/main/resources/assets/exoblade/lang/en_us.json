@@ -1,13 +1,11 @@
 {
-  "itemGroup.exoblade": "Exoblade Tab",
-  "block.exoblade.example_block": "Example Block",
-  "item.exoblade.example_item": "Example Item",
+  "item.exoblade.steel_ingot": "Steel Ingot",
+  "item.exoblade.impure_steel": "Impure Steel",
+  "item.exoblade.steel_sword": "Steel Sword",
+  "item.exoblade.steel_pickaxe": "Steel Pickaxe",
+  "item.exoblade.steel_axe": "Steel Axe",
 
-  "exoblade.configuration.title": "Exoblade Configs",
-  "exoblade.configuration.section.exoblade.common.toml": "Exoblade Configs",
-  "exoblade.configuration.section.exoblade.common.toml.title": "Exoblade Configs",
-  "exoblade.configuration.items": "Item List",
-  "exoblade.configuration.logDirtBlock": "Log Dirt Block",
-  "exoblade.configuration.magicNumberIntroduction": "Magic Number Text",
-  "exoblade.configuration.magicNumber": "Magic Number"
+
+  //Creative Mode Tab
+  "creativetab.stratoblade.stratoblade_tab": "Exoblade Tab"
 }
