@@ -1,9 +1,13 @@
 {
   "item.exoblade.steel_ingot": "Steel Ingot",
   "item.exoblade.impure_steel": "Impure Steel",
+  "item.exoblade.reinforced_stick": "Reinforced Stick",
   "item.exoblade.steel_sword": "Steel Sword",
   "item.exoblade.steel_pickaxe": "Steel Pickaxe",
   "item.exoblade.steel_axe": "Steel Axe",
+  "item.exoblade.steel_shovel": "Steel Shovel",
+  "item.exoblade.steel_hoe": "Steel Hoe",
+
 
 
   //Creative Mode Tab

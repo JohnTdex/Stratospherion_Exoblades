@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "exoblade:steel_ingot"
+    }
+  ],
+  "result": {
+    "id": "exoblade:reinforced_stick",
+    "count": 1
+  }
+}

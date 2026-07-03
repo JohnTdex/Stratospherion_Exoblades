@@ -2,10 +2,7 @@ package net.johntdex.stratoblade.item;
 
 import net.johntdex.stratoblade.StratoBlade;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -17,6 +14,7 @@ public class ExoItems {
     //These are for the items
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IMPURE_STEEL = ITEMS.register("impure_steel", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> REINFORCED_STICK = ITEMS.register("reinforced_stick", () -> new Item(new Item.Properties()));
 
     //This is for the tools
     public static final DeferredItem<SwordItem> STEEL_SWORD = ITEMS.register("steel_sword",
@@ -31,6 +29,14 @@ public class ExoItems {
             () -> new AxeItem(StratoToolTiers.STEEL, new Item.Properties()
                     .attributes(AxeItem.createAttributes(StratoToolTiers.STEEL,
                             5.5f, -2.4f))));
+    public static final DeferredItem<ShovelItem> STEEL_SHOVEL = ITEMS.register("steel_shovel",
+            () -> new ShovelItem(StratoToolTiers.STEEL, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(StratoToolTiers.STEEL,
+                            1.5f, -2.8f))));
+    public static final DeferredItem<HoeItem> STEEL_HOE = ITEMS.register("steel_hoe",
+            () -> new HoeItem(StratoToolTiers.STEEL, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(StratoToolTiers.STEEL,
+                            -1.0f, -1.0f))));
 
 
 

@@ -20,9 +20,14 @@ public class StratoBladeCreativeTab {
             .displayItems(((itemDisplayParameters, output) -> {
                 output.accept(ExoItems.STEEL_INGOT.get());
                 output.accept(ExoItems.IMPURE_STEEL.get());
+                output.accept(ExoItems.REINFORCED_STICK.get());
                 output.accept(ExoItems.STEEL_SWORD.get());
-                output.accept(ExoItems.STEEL_AXE.get());
                 output.accept(ExoItems.STEEL_PICKAXE.get());
+                output.accept(ExoItems.STEEL_AXE.get());
+                output.accept(ExoItems.STEEL_SHOVEL.get());
+                output.accept(ExoItems.STEEL_HOE.get());
+
+
             }))
             .build());
 
