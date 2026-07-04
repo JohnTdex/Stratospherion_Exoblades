@@ -16,12 +16,14 @@
 
 This mod brings new weapons and materials that aims to assist and dominate the field for protection ~~(destruction)~~. Mainly built for futuristic/industrial theme gameplay and can blend well to mods like Create, Mekanism, Oritech etc.
 
-<b>FEATURES: </b>
+<h1>FEATURES: </h1>
+
  * Material Progression
  * Steel Tools
  * New Exotic Tools/Weaponries
 
-**TO DO LIST:**
+<h1>TO DO LIST:</h1>
+
 * Add materials ✅
 * Add Steel Tools ✅
 * Add Exorium ✅
