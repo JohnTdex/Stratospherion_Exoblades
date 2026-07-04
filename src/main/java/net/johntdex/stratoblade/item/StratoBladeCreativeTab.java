@@ -1,6 +1,7 @@
 package net.johntdex.stratoblade.item;
 
 import net.johntdex.stratoblade.StratoBlade;
+import net.johntdex.stratoblade.block.StratoBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,6 +19,7 @@ public class StratoBladeCreativeTab {
             .icon(() -> new ItemStack(ExoItems.STEEL_INGOT.get()))
             .title(Component.translatable("creativetab.stratoblade.stratoblade_tab"))
             .displayItems(((itemDisplayParameters, output) -> {
+                output.accept(StratoBlocks.STEEL_BLOCK.get());
                 output.accept(ExoItems.STEEL_INGOT.get());
                 output.accept(ExoItems.IMPURE_STEEL.get());
                 output.accept(ExoItems.REINFORCED_STICK.get());
@@ -26,6 +28,8 @@ public class StratoBladeCreativeTab {
                 output.accept(ExoItems.STEEL_AXE.get());
                 output.accept(ExoItems.STEEL_SHOVEL.get());
                 output.accept(ExoItems.STEEL_HOE.get());
+                output.accept(ExoItems.UNSTABLE_EXORIUM_INGOT.get());
+
 
 
             }))

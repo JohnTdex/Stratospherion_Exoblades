@@ -1,6 +1,7 @@
 package net.johntdex.stratoblade.datagen;
 
 import net.johntdex.stratoblade.StratoBlade;
+import net.johntdex.stratoblade.block.StratoBlocks;
 import net.johntdex.stratoblade.util.StratoTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -24,6 +25,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         // via getIncorrectBlocksForDrops().
         tag(StratoTags.Blocks.INCORRECT_STEEL_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(StratoBlocks.STEEL_BLOCK.get());
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(StratoBlocks.STEEL_BLOCK.get());
 
         // NEEDS_STEEL_TOOL is intentionally left empty for now — populate it later with your own
         // custom blocks that should require a steel-or-better tool to mine.
