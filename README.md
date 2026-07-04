@@ -31,6 +31,7 @@ This mod brings new weapons and materials that aims to assist and dominate the f
 * Add own workbench for weaponry crafting
 ---------------------------
 <h1>USAGE:</h1>
+
 * You are free to use this on a modpack
 * You are free to make content with this mod.
 * A direct link to the mod's homepage is highly appreciated.
