@@ -14,7 +14,7 @@
 
 <i>"Stratospherion is a Tech Corp from year 2080. It's mission was to explore, investigate, and research knowledge that bring the foundation of reality to its manifestation."</i>
 
-This mod brings new weapons and materials that aims to assist and dominate the field for protection ~~(destruction)~~.
+This mod brings new weapons and materials that aims to assist and dominate the field for protection ~~(destruction)~~. Mainly built for futuristic/industrial theme gameplay and can blend well to mods like Create, Mekanism, Oritech etc.
 
 <b>FEATURES: </b>
  * Material Progression
@@ -22,6 +22,17 @@ This mod brings new weapons and materials that aims to assist and dominate the f
  * New Exotic Tools/Weaponries
 
 **TO DO LIST:**
-* Add materials 
+* Add materials ✅
+* Add Steel Tools ✅
+* Add Exorium ✅
+* Add Exorium Tools ✅
 * Add own workbench for weaponry crafting
-* 
+---------------------------
+<h1>USAGE:</h1>
+* You are free to use this on a modpack
+* You are free to make content with this mod.
+* A direct link to the mod's homepage is highly appreciated.
+
+----------------------------
+
+**Don't forget to leave a comment/suggestions either on github or curseforge!**
