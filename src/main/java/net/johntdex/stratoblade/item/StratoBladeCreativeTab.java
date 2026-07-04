@@ -22,13 +22,14 @@ public class StratoBladeCreativeTab {
                 output.accept(StratoBlocks.STEEL_BLOCK.get());
                 output.accept(ExoItems.STEEL_INGOT.get());
                 output.accept(ExoItems.IMPURE_STEEL.get());
+                output.accept(ExoItems.UNSTABLE_EXORIUM_INGOT.get());
                 output.accept(ExoItems.REINFORCED_STICK.get());
                 output.accept(ExoItems.STEEL_SWORD.get());
                 output.accept(ExoItems.STEEL_PICKAXE.get());
                 output.accept(ExoItems.STEEL_AXE.get());
                 output.accept(ExoItems.STEEL_SHOVEL.get());
                 output.accept(ExoItems.STEEL_HOE.get());
-                output.accept(ExoItems.UNSTABLE_EXORIUM_INGOT.get());
+
 
 
 
