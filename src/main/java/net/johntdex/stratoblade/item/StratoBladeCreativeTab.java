@@ -15,7 +15,7 @@ public class StratoBladeCreativeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, StratoBlade.MODID);
 
 
-    public static final Supplier<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("stratoblade_tab", () -> CreativeModeTab.builder()
+    public static final Supplier<CreativeModeTab> EXO_TAB = CREATIVE_MODE_TABS.register("stratoblade_tab", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(ExoItems.STEEL_INGOT.get()))
             .title(Component.translatable("creativetab.stratoblade.stratoblade_tab"))
             .displayItems(((itemDisplayParameters, output) -> {
