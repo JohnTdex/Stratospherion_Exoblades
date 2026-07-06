@@ -4,6 +4,7 @@
   "item.exoblade.reinforced_stick": "Reinforced Stick",
   "item.exoblade.unstable_exorium_ingot": "Unstable Exorium Ingot",
   "item.exoblade.exorium_ingot": "Exorium Ingot",
+  "item.exoblade.prismal_excore": "Prismal Excore",
   "item.exoblade.silicon": "Silicon",
   "item.exoblade.steel_sword": "Steel Sword",
   "item.exoblade.steel_pickaxe": "Steel Pickaxe",
@@ -12,6 +13,7 @@
   "item.exoblade.steel_hoe": "Steel Hoe",
 
   "block.exoblade.steel_block": "Steel Block",
+  "block.exoblade.exorium_block": "Exorium Block",
 
   "creativetab.stratoblade.stratoblade_tab": "Exoblade"
 }

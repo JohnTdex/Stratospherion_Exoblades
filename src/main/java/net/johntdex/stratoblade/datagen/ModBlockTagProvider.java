@@ -25,10 +25,18 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         // via getIncorrectBlocksForDrops().
         tag(StratoTags.Blocks.INCORRECT_STEEL_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        //STEEL BLOCK
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(StratoBlocks.STEEL_BLOCK.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(StratoBlocks.STEEL_BLOCK.get());
+
+        //EXORIUM BLOCK
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(StratoBlocks.EXORIUM_BLOCK.get());
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(StratoBlocks.EXORIUM_BLOCK.get());
 
         // NEEDS_STEEL_TOOL is intentionally left empty for now — populate it later with your own
         // custom blocks that should require a steel-or-better tool to mine.

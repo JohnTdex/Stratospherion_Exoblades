@@ -21,6 +21,11 @@ public class StratoBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
 
+    public static final DeferredBlock<Block> EXORIUM_BLOCK = registerBlock("exorium_block",
+            () -> new Block(Block.Properties.of().strength(5.0f, 8.0f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

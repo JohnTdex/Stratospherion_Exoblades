@@ -20,11 +20,13 @@ public class StratoBladeCreativeTab {
             .title(Component.translatable("creativetab.stratoblade.stratoblade_tab"))
             .displayItems(((itemDisplayParameters, output) -> {
                 output.accept(StratoBlocks.STEEL_BLOCK.get());
+                output.accept(StratoBlocks.EXORIUM_BLOCK.get());
                 output.accept(ExoItems.STEEL_INGOT.get());
                 output.accept(ExoItems.IMPURE_STEEL.get());
                 output.accept(ExoItems.UNSTABLE_EXORIUM_INGOT.get());
                 output.accept(ExoItems.EXORIUM_INGOT.get());
                 output.accept(ExoItems.SILICON.get());
+                output.accept(ExoItems.PRISMAL_EXCORE.get());
                 output.accept(ExoItems.REINFORCED_STICK.get());
                 output.accept(ExoItems.STEEL_SWORD.get());
                 output.accept(ExoItems.STEEL_PICKAXE.get());
