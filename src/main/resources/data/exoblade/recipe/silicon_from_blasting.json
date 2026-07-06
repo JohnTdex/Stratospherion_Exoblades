@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "minecraft:quartz"
+  },
+  "result": {
+    "id": "exoblade:silicon"
+  },
+  "experience": 0.5,
+  "cookingtime": 150
+}
