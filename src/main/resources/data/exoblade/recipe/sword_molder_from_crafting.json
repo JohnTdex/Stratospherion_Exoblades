@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BFB",
+    "BFB",
+    "BSB"
+  ],
+  "key": {
+    "B": {
+      "item": "brick"
+    },
+    "F": {
+      "item": "minecraft:flint"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "exoblade:sword_molder"
+  }
+}

@@ -17,13 +17,16 @@ public class ExoItems {
     public static final DeferredItem<Item> REINFORCED_STICK = ITEMS.register("reinforced_stick", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> UNSTABLE_EXORIUM_INGOT = ITEMS.register("unstable_exorium_ingot", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> EXORIUM_INGOT = ITEMS.register("exorium_ingot", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CARBON_STEEL = ITEMS.register("carbon_steel", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SILICON = ITEMS.register("silicon", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PRISMAL_EXCORE = ITEMS.register("prismal_excore", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SWORD_MOLDER = ITEMS.register("sword_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> KATANA_MOLDER = ITEMS.register("katana_molder", () -> new Item(new Item.Properties()));
 
-    //This is for the tools
+    //This is for the Steel Tools
     public static final DeferredItem<SwordItem> STEEL_SWORD = ITEMS.register("steel_sword",
-            () -> new SwordItem(StratoToolTiers.STEEL, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(StratoToolTiers.STEEL,
+            () -> new SwordItem(StratoToolTiers.STEEL_SWORD, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(StratoToolTiers.STEEL_SWORD,
                             3f, -1.8f))));
     public static final DeferredItem<PickaxeItem> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
             () -> new PickaxeItem(StratoToolTiers.STEEL, new Item.Properties()
@@ -42,7 +45,15 @@ public class ExoItems {
                     .attributes(HoeItem.createAttributes(StratoToolTiers.STEEL,
                             -1.0f, -1.0f))));
 
-
+    //Carbon Steel
+    public static final DeferredItem<SwordItem> CARBON_STEEL_SWORD = ITEMS.register("carbon_steel_sword",
+            () -> new SwordItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(StratoToolTiers.CARBON_STEEL,
+                            4f, -1.8f))));
+    public static final DeferredItem<SwordItem> CARBON_STEEL_KATANA = ITEMS.register("carbon_steel_katana",
+            () -> new SwordItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(StratoToolTiers.CARBON_STEEL,
+                            4f, -1.4f))));
 
 
     public static void register(IEventBus bus) {

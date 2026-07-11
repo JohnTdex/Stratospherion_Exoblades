@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "exoblade:carbon_steel"
+  },
+  "addition": {
+    "item": "exoblade:reinforced_stick"
+  },
+  "template": {
+    "item": "exoblade:katana_molder"
+  },
+  "result": {
+    "id": "exoblade:carbon_steel_katana"
+  }
+}
