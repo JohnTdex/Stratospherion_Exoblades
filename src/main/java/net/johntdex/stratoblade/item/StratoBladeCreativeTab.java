@@ -31,6 +31,7 @@ public class StratoBladeCreativeTab {
                 output.accept(ExoItems.REINFORCED_STICK.get());
                 output.accept(ExoItems.SWORD_MOLDER.get());
                 output.accept(ExoItems.KATANA_MOLDER.get());
+                output.accept(ExoItems.SCYTHE_MOLDER.get());
                 output.accept(ExoItems.STEEL_SWORD.get());
                 output.accept(ExoItems.STEEL_PICKAXE.get());
                 output.accept(ExoItems.STEEL_AXE.get());
@@ -38,6 +39,7 @@ public class StratoBladeCreativeTab {
                 output.accept(ExoItems.STEEL_HOE.get());
                 output.accept(ExoItems.CARBON_STEEL_SWORD.get());
                 output.accept(ExoItems.CARBON_STEEL_KATANA.get());
+                output.accept(ExoItems.CARBON_STEEL_SCYTHE.get());
 
             }))
             .build());

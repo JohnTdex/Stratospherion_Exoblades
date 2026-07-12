@@ -1,5 +1,8 @@
 {
   "values": [
-    "exoblade:steel_sword"
+    "exoblade:steel_sword",
+    "exoblade:carbon_steel_sword",
+    "exoblade:carbon_steel_katana",
+    "exoblade:carbon_steel_scythe"
   ]
 }

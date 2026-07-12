@@ -9,6 +9,7 @@
   "item.exoblade.silicon": "Silicon",
   "item.exoblade.sword_molder": "Sword Molder",
   "item.exoblade.katana_molder": "Katana Molder",
+  "item.exoblade.scythe_molder": "Scythe Molder",
   "item.exoblade.steel_sword": "Steel Sword",
   "item.exoblade.steel_pickaxe": "Steel Pickaxe",
   "item.exoblade.steel_axe": "Steel Axe",
@@ -16,6 +17,7 @@
   "item.exoblade.steel_hoe": "Steel Hoe",
   "item.exoblade.carbon_steel_sword": "Carbon Steel Sword",
   "item.exoblade.carbon_steel_katana": "Carbon Steel Katana",
+  "item.exoblade.carbon_steel_scythe": "Carbon Steel Scythe",
 
   "block.exoblade.steel_block": "Steel Block",
   "block.exoblade.exorium_block": "Exorium Block",

@@ -27,5 +27,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.AXES).add(ExoItems.STEEL_AXE.get());
         tag(ItemTags.SHOVELS).add(ExoItems.STEEL_SHOVEL.get());
         tag(ItemTags.HOES).add(ExoItems.STEEL_HOE.get());
+        tag(ItemTags.SWORDS).add(ExoItems.CARBON_STEEL_SWORD.get());
+        tag(ItemTags.SWORDS).add(ExoItems.CARBON_STEEL_KATANA.get());
+        tag(ItemTags.SWORDS).add(ExoItems.CARBON_STEEL_SCYTHE.get());
+
     }
 }

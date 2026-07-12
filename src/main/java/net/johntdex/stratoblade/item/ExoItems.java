@@ -12,16 +12,17 @@ public class ExoItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(StratoBlade.MODID);
 
     //These are for the items
-    public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final DeferredItem<Item> IMPURE_STEEL = ITEMS.register("impure_steel", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> REINFORCED_STICK = ITEMS.register("reinforced_stick", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> UNSTABLE_EXORIUM_INGOT = ITEMS.register("unstable_exorium_ingot", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> EXORIUM_INGOT = ITEMS.register("exorium_ingot", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> CARBON_STEEL = ITEMS.register("carbon_steel", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> UNSTABLE_EXORIUM_INGOT = ITEMS.register("unstable_exorium_ingot", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> EXORIUM_INGOT = ITEMS.register("exorium_ingot", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> CARBON_STEEL = ITEMS.register("carbon_steel", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final DeferredItem<Item> SILICON = ITEMS.register("silicon", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> PRISMAL_EXCORE = ITEMS.register("prismal_excore", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PRISMAL_EXCORE = ITEMS.register("prismal_excore", () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
     public static final DeferredItem<Item> SWORD_MOLDER = ITEMS.register("sword_molder", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> KATANA_MOLDER = ITEMS.register("katana_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SCYTHE_MOLDER = ITEMS.register("scythe_molder", () -> new Item(new Item.Properties()));
 
     //This is for the Steel Tools
     public static final DeferredItem<SwordItem> STEEL_SWORD = ITEMS.register("steel_sword",
@@ -49,11 +50,19 @@ public class ExoItems {
     public static final DeferredItem<SwordItem> CARBON_STEEL_SWORD = ITEMS.register("carbon_steel_sword",
             () -> new SwordItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
                     .attributes(SwordItem.createAttributes(StratoToolTiers.CARBON_STEEL,
-                            4f, -1.8f))));
+                            4f, -1.8f))
+                    .rarity(Rarity.UNCOMMON)));
     public static final DeferredItem<SwordItem> CARBON_STEEL_KATANA = ITEMS.register("carbon_steel_katana",
             () -> new SwordItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
                     .attributes(SwordItem.createAttributes(StratoToolTiers.CARBON_STEEL,
-                            4f, -1.4f))));
+                            3.6f, -1.4f))
+                    .rarity(Rarity.UNCOMMON)));
+    public static final DeferredItem<SwordItem> CARBON_STEEL_SCYTHE = ITEMS.register("carbon_steel_scythe",
+            () -> new SwordItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(StratoToolTiers.CARBON_STEEL,
+                            4.5f, -2.2f))
+                    .rarity(Rarity.UNCOMMON)));
+
 
 
     public static void register(IEventBus bus) {
