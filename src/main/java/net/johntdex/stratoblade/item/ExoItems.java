@@ -1,11 +1,16 @@
 package net.johntdex.stratoblade.item;
 
 import net.johntdex.stratoblade.StratoBlade;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemLore;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class ExoItems {
     // Create a Deferred Register to hold Items which will all be registered under the "exoblade" namespace
@@ -23,6 +28,7 @@ public class ExoItems {
     public static final DeferredItem<Item> SWORD_MOLDER = ITEMS.register("sword_molder", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> KATANA_MOLDER = ITEMS.register("katana_molder", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SCYTHE_MOLDER = ITEMS.register("scythe_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DAGGER_MOLDER = ITEMS.register("dagger_molder", () -> new Item(new Item.Properties()));
 
     //This is for the Steel Tools
     public static final DeferredItem<SwordItem> STEEL_SWORD = ITEMS.register("steel_sword",
@@ -61,7 +67,15 @@ public class ExoItems {
             () -> new SwordItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
                     .attributes(SwordItem.createAttributes(StratoToolTiers.CARBON_STEEL,
                             4.5f, -2.2f))
-                    .rarity(Rarity.UNCOMMON)));
+                    .rarity(Rarity.UNCOMMON)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.carbon_steel_scythe"))))));
+    public static final DeferredItem<SwordItem> CARBON_STEEL_DAGGER = ITEMS.register("carbon_steel_dagger",
+            ()  -> new BleedingWeaponItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(StratoToolTiers.CARBON_STEEL,
+                            0.5f, -1.0f))
+                    .rarity(Rarity.UNCOMMON)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.carbon_steel_dagger")))),
+                    0.30f, 100));
 
 
 

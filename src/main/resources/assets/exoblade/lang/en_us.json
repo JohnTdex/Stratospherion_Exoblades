@@ -10,6 +10,7 @@
   "item.exoblade.sword_molder": "Sword Molder",
   "item.exoblade.katana_molder": "Katana Molder",
   "item.exoblade.scythe_molder": "Scythe Molder",
+  "item.exoblade.dagger_molder": "Dagger Molder",
   "item.exoblade.steel_sword": "Steel Sword",
   "item.exoblade.steel_pickaxe": "Steel Pickaxe",
   "item.exoblade.steel_axe": "Steel Axe",
@@ -18,9 +19,19 @@
   "item.exoblade.carbon_steel_sword": "Carbon Steel Sword",
   "item.exoblade.carbon_steel_katana": "Carbon Steel Katana",
   "item.exoblade.carbon_steel_scythe": "Carbon Steel Scythe",
+  "item.exoblade.carbon_steel_dagger": "Carbon Steel Dagger",
 
   "block.exoblade.steel_block": "Steel Block",
   "block.exoblade.exorium_block": "Exorium Block",
 
-  "creativetab.stratoblade.stratoblade_tab": "Exoblade"
+  "creativetab.stratoblade.stratoblade_tab": "Exoblade",
+
+  "effect.exoblade.bleeding": "Bleeding",
+  "effect.exoblade.bleeding.desc": "Causes the target to bleed over time.",
+
+  "death.attack.exoblade.bleeding": "%1$s bled to death",
+  "death.attack.exoblade.bleeding.player": "%1$s bled to death whilst fighting %2$s",
+
+  "tooltip.exoblade.carbon_steel_scythe": "A scythe made of carbon steel, known for its durability and sharpness. Has built in sweeping edge for AOE attacks.",
+  "tooltip.exoblade.carbon_steel_dagger": "A dagger made of carbon steel, known for its durability and sharpness. Has 30% chance of bleeding effect on enemies."
 }
