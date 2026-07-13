@@ -39,9 +39,12 @@ public class StratoBladeCreativeTab {
                 output.accept(ExoItems.STEEL_SHOVEL.get());
                 output.accept(ExoItems.STEEL_HOE.get());
                 output.accept(ExoItems.CARBON_STEEL_SWORD.get());
+                output.accept(ExoItems.CARBON_STEEL_MACHETE.get());
+                output.accept(ExoItems.CARBON_STEEL_DAGGER.get());
                 output.accept(ExoItems.CARBON_STEEL_KATANA.get());
                 output.accept(ExoItems.CARBON_STEEL_SCYTHE.get());
-                output.accept(ExoItems.CARBON_STEEL_DAGGER.get());
+                output.accept(ExoItems.CARBON_STEEL_HATCHET.get());
+                output.accept(ExoItems.CARBON_STEEL_SPEAR.get());
 
             }))
             .build());

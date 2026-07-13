@@ -12,12 +12,12 @@ public class BleedingEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity entity, int amplifier) {
-        entity.hurt(entity.damageSources().source(ExoDamageTypes.BLEEDING), 1.0f);
+        entity.hurt(entity.damageSources().source(ExoDamageTypes.BLEEDING), 1.0f * (amplifier + 1));
         return true;
     }
 
-    @Override
-    public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
-        return duration % 20 == 0; // once per second
-    }
+@Override
+public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
+    return duration % 20 == 0; // once per second
+}
 }

@@ -24,7 +24,7 @@ public class StratoToolTiers {
             StratoTags.Blocks.INCORRECT_STEEL_TOOL,
             1200,
             7.0f,
-            2.6f,
+            2.7f,
             28,
             () -> Ingredient.of(ExoItems.CARBON_STEEL.get()));
 }

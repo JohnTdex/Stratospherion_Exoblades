@@ -3,12 +3,18 @@ package net.johntdex.stratoblade.item;
 import net.johntdex.stratoblade.StratoBlade;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.ItemLore;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.w3c.dom.Attr;
 
 import java.util.List;
 
@@ -75,7 +81,34 @@ public class ExoItems {
                             0.5f, -1.0f))
                     .rarity(Rarity.UNCOMMON)
                     .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.carbon_steel_dagger")))),
-                    0.30f, 100));
+                    0.30f, 100, 0));
+    public static final DeferredItem<AxeItem> CARBON_STEEL_MACHETE = ITEMS.register("carbon_steel_machete",
+            () -> new AxeItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(StratoToolTiers.CARBON_STEEL,
+                            4.0f, -1.8f))
+                    .rarity(Rarity.UNCOMMON)));
+    public static final DeferredItem<AxeItem> CARBON_STEEL_HATCHET = ITEMS.register("carbon_steel_hatchet",
+            () -> new AxeItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(StratoToolTiers.CARBON_STEEL,
+                            3.0f, -2.6f))
+                    .rarity(Rarity.UNCOMMON)));
+    public static final DeferredItem<SwordItem> CARBON_STEEL_SPEAR = ITEMS.register("carbon_steel_spear",
+            () -> new SwordItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
+                    .attributes(ItemAttributeModifiers.builder()
+                            .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID, 3.0+
+                                    StratoToolTiers.CARBON_STEEL.getAttackDamageBonus(), AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
+                            .add(Attributes.ATTACK_SPEED, new AttributeModifier(Item.BASE_ATTACK_SPEED_ID, -3.0,
+                                    AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
+                            .add(Attributes.ENTITY_INTERACTION_RANGE, new AttributeModifier(
+                                    ResourceLocation.fromNamespaceAndPath(StratoBlade.MODID, "spear_reach"),
+                                    1.0, AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
+                                    .build())
+                    .rarity(Rarity.UNCOMMON)));
+
+    //Add Molders and recipes for these new tools!!
 
 
 
