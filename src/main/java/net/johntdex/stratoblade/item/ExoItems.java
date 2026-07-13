@@ -86,9 +86,9 @@ public class ExoItems {
 
 
     // Creates a new food item with the id "exoblade:example_item", nutrition 1 and saturation 2
-    public static final DeferredItem<Item> EXAMPLE_ITEM = ExoItems.ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
-            .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
+    //May add in the future for some eddies :D
+    //public static final DeferredItem<Item> EXAMPLE_ITEM = ExoItems.ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
+            //.alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
-    // Add new custom tools here, e.g.:
-    // public static final DeferredItem<Item> EXO_BLADE = ITEMS.registerSimpleItem("exo_blade", new Item.Properties());
+
 }
