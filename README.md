@@ -6,7 +6,7 @@
 <h1 align="center"> <img width="400" height="100" alt="neoforged_logo" src="https://github.com/user-attachments/assets/3643a47d-31a9-4608-81a7-99e49162a11b" />
 
 [![Static Badge](https://img.shields.io/badge/github-repo-blue?style=for-the-badge&logo=github)](https://github.com/JohnTdex/Stratospherion_Exoblades)
-<img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/License-MIT/ARR-blue?style=for-the-badge"/>
 ![Static Badge](https://img.shields.io/badge/--%2308071C?style=for-the-badge&logo=modrinth)
 ![Static Badge](https://img.shields.io/badge/--%231E0612?style=for-the-badge&logo=curseforge)
 </h1 align="center">
@@ -39,3 +39,12 @@ This mod brings new weapons and materials that aims to assist and dominate the f
 ----------------------------
 
 **Don't forget to leave a comment/suggestions either on github or curseforge!**
+
+## Code
+The source code (.java files) is licensed under the MIT License.
+
+## Assets
+All textures, models, and sound files in this repository are
+© 2026 JohnTdex/Lyron. All Rights Reserved.
+You may NOT use, copy, redistribute, or modify these assets
+without explicit permission.
