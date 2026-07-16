@@ -30,11 +30,14 @@ public class ExoItems {
     public static final DeferredItem<Item> EXORIUM_INGOT = ITEMS.register("exorium_ingot", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
     public static final DeferredItem<Item> CARBON_STEEL = ITEMS.register("carbon_steel", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final DeferredItem<Item> SILICON = ITEMS.register("silicon", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> PRISMAL_EXCORE = ITEMS.register("prismal_excore", () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+    //public static final DeferredItem<Item> PRISMAL_EXCORE = ITEMS.register("prismal_excore", () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
     public static final DeferredItem<Item> SWORD_MOLDER = ITEMS.register("sword_molder", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> KATANA_MOLDER = ITEMS.register("katana_molder", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SCYTHE_MOLDER = ITEMS.register("scythe_molder", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DAGGER_MOLDER = ITEMS.register("dagger_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MACHETE_MOLDER = ITEMS.register("machete_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> HATCHET_MOLDER = ITEMS.register("hatchet_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SPEAR_MOLDER = ITEMS.register("spear_molder", () -> new Item(new Item.Properties()));
 
     //This is for the Steel Tools
     public static final DeferredItem<SwordItem> STEEL_SWORD = ITEMS.register("steel_sword",

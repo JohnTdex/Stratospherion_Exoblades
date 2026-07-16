@@ -27,12 +27,15 @@ public class StratoBladeCreativeTab {
                 output.accept(ExoItems.UNSTABLE_EXORIUM_INGOT.get());
                 output.accept(ExoItems.EXORIUM_INGOT.get());
                 output.accept(ExoItems.SILICON.get());
-                output.accept(ExoItems.PRISMAL_EXCORE.get());
+                //output.accept(ExoItems.PRISMAL_EXCORE.get());
                 output.accept(ExoItems.REINFORCED_STICK.get());
                 output.accept(ExoItems.SWORD_MOLDER.get());
                 output.accept(ExoItems.KATANA_MOLDER.get());
                 output.accept(ExoItems.SCYTHE_MOLDER.get());
                 output.accept(ExoItems.DAGGER_MOLDER.get());
+                output.accept(ExoItems.MACHETE_MOLDER.get());
+                output.accept(ExoItems.HATCHET_MOLDER.get());
+                output.accept(ExoItems.SPEAR_MOLDER.get());
                 output.accept(ExoItems.STEEL_SWORD.get());
                 output.accept(ExoItems.STEEL_PICKAXE.get());
                 output.accept(ExoItems.STEEL_AXE.get());
