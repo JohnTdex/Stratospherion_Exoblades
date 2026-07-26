@@ -32,6 +32,7 @@ This mod brings new weapons and materials that aims to assist and dominate the f
 * Add Exorium Weaponries✅
 * Add own workbench for weaponry crafting
 * Considering Ore Generations
+* Advanced Weapon abilities
 ---------------------------
 <h1>USAGE:</h1>
 
