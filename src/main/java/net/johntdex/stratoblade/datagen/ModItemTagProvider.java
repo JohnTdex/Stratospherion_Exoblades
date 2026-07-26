@@ -19,7 +19,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
         super(output, lookupProvider, CompletableFuture.completedFuture(TagsProvider.TagLookup.empty()),
                 StratoBlade.MODID, existingFileHelper);
     }
-
+// needed for /enchant support
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(ItemTags.SWORDS).add(ExoItems.STEEL_SWORD.get());
@@ -29,7 +29,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.HOES).add(ExoItems.STEEL_HOE.get());
         tag(ItemTags.SWORDS).add(ExoItems.CARBON_STEEL_SWORD.get());
         tag(ItemTags.SWORDS).add(ExoItems.CARBON_STEEL_KATANA.get());
+        tag(ItemTags.SWORDS).add(ExoItems.CARBON_STEEL_DAGGER.get());
         tag(ItemTags.SWORDS).add(ExoItems.CARBON_STEEL_SCYTHE.get());
+        tag(ItemTags.AXES).add(ExoItems.CARBON_STEEL_MACHETE.get());
+        tag(ItemTags.AXES).add(ExoItems.CARBON_STEEL_HATCHET.get());
+        tag(ItemTags.SWORDS).add(ExoItems.CARBON_STEEL_SPEAR.get());
+        tag(ItemTags.SWORDS).add(ExoItems.EXORIUM_SWORD.get());
+        tag(ItemTags.SWORDS).add(ExoItems.EXORIUM_DAGGER.get());
 
     }
 }

@@ -3,6 +3,7 @@
   "item.exoblade.impure_steel": "Impure Steel",
   "item.exoblade.carbon_steel": "Carbon Steel",
   "item.exoblade.reinforced_stick": "Reinforced Stick",
+  "item.exoblade.carbon_handle": "Carbon Handle",
   "item.exoblade.unstable_exorium_ingot": "Unstable Exorium Ingot",
   "item.exoblade.exorium_ingot": "Exorium Ingot",
   "item.exoblade.prismal_excore": "Prismal Excore",
@@ -26,11 +27,16 @@
   "item.exoblade.carbon_steel_machete": "Carbon Steel Machete",
   "item.exoblade.carbon_steel_hatchet": "Carbon Steel Hatchet",
   "item.exoblade.carbon_steel_spear": "Carbon Steel Spear",
+  "item.exoblade.exorium_sword": "Exorium Sword",
+  "item.exoblade.exorium_dagger": "Exorium Dagger",
 
   "block.exoblade.steel_block": "Steel Block",
   "block.exoblade.exorium_block": "Exorium Block",
 
   "creativetab.stratoblade.stratoblade_tab": "Exoblade",
+
+  "tooltip.exoblade.carbon_steel_scythe": "A scythe made of carbon steel, known for its durability and sharpness. Has built in sweeping edge for AOE attacks.",
+  "tooltip.exoblade.carbon_steel_dagger": "A dagger made of carbon steel, known for its durability and sharpness. Has 30% chance of bleeding effect on enemies.",
 
   "effect.exoblade.bleeding": "Bleeding",
   "effect.exoblade.bleeding.desc": "Causes the target to bleed over time.",

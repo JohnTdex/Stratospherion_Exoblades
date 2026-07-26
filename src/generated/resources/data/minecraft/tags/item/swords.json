@@ -3,6 +3,10 @@
     "exoblade:steel_sword",
     "exoblade:carbon_steel_sword",
     "exoblade:carbon_steel_katana",
-    "exoblade:carbon_steel_scythe"
+    "exoblade:carbon_steel_dagger",
+    "exoblade:carbon_steel_scythe",
+    "exoblade:carbon_steel_spear",
+    "exoblade:exorium_sword",
+    "exoblade:exorium_dagger"
   ]
 }

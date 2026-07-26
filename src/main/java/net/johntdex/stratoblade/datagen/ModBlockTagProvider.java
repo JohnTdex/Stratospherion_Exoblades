@@ -38,6 +38,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(StratoBlocks.EXORIUM_BLOCK.get());
 
+        //NETHERITE LEVEL
+
         // NEEDS_STEEL_TOOL is intentionally left empty for now — populate it later with your own
         // custom blocks that should require a steel-or-better tool to mine.
     }

@@ -25,6 +25,14 @@ public class StratoToolTiers {
             1200,
             7.0f,
             2.7f,
-            28,
+            18,
             () -> Ingredient.of(ExoItems.CARBON_STEEL.get()));
+
+    public static final Tier EXORIUM = new SimpleTier(
+            StratoTags.Blocks.INCORRECT_EXORIUM_TOOL,
+            2077,
+            9.0f,
+            4f,
+            28,
+            () -> Ingredient.of(ExoItems.EXORIUM_INGOT.get()));
 }
