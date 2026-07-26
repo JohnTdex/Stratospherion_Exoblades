@@ -1,5 +1,8 @@
 package net.johntdex.stratoblade;
 
+import net.johntdex.stratoblade.client.model.HatchetModel;
+import net.johntdex.stratoblade.client.renderer.HatchetProjectileRenderer;
+import net.johntdex.stratoblade.entity.ExoEntities;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -7,6 +10,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
@@ -27,5 +31,14 @@ public class StratoBladeModClient {
         // Some client setup code
         StratoBlade.LOGGER.info("HELLO FROM CLIENT SETUP");
         StratoBlade.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+    }
+    @SubscribeEvent
+    static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(HatchetModel.LAYER_LOCATION, HatchetModel::createBodyLayer);
+    }
+
+    @SubscribeEvent
+    static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(ExoEntities.HATCHET_PROJECTILE.get(), HatchetProjectileRenderer::new);
     }
 }

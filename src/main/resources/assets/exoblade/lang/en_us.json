@@ -35,15 +35,16 @@
 
   "creativetab.stratoblade.stratoblade_tab": "Exoblade",
 
-  "tooltip.exoblade.carbon_steel_scythe": "A scythe made of carbon steel, known for its durability and sharpness. Has built in sweeping edge for AOE attacks.",
-  "tooltip.exoblade.carbon_steel_dagger": "A dagger made of carbon steel, known for its durability and sharpness. Has 30% chance of bleeding effect on enemies.",
-
   "effect.exoblade.bleeding": "Bleeding",
   "effect.exoblade.bleeding.desc": "Causes the target to bleed over time.",
+
+  "entity.exoblade.hatchet_projectile": "Hatchet Projectile",
 
   "death.attack.exoblade.bleeding": "%1$s bled to death",
   "death.attack.exoblade.bleeding.player": "%1$s bled to death whilst fighting %2$s",
 
   "tooltip.exoblade.carbon_steel_scythe": "A scythe made of carbon steel, known for its durability and sharpness. Has built in sweeping edge for AOE attacks.",
-  "tooltip.exoblade.carbon_steel_dagger": "A dagger made of carbon steel, known for its durability and sharpness. Has 30% chance of bleeding effect on enemies."
+  "tooltip.exoblade.carbon_steel_dagger": "A dagger made of carbon steel, known for its durability and sharpness. Has 30% chance of bleeding effect on enemies.",
+  "tooltip.exoblade.carbon_steel_hatchet": "Throwable Axe that can still be used for everyday lumbering.",
+  "tooltip.exoblade.carbon_steel_spear": "Primitive yet can poke enemies as far as 4 blocks away."
 }

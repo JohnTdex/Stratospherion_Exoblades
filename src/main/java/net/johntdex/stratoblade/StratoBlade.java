@@ -2,6 +2,8 @@ package net.johntdex.stratoblade;
 
 import net.johntdex.stratoblade.block.StratoBlocks;
 import net.johntdex.stratoblade.effect.ExoEffects;
+import net.johntdex.stratoblade.entity.ExoEntities;
+import net.johntdex.stratoblade.event.ExoEvents;
 import net.johntdex.stratoblade.item.ExoItems;
 import net.johntdex.stratoblade.item.StratoBladeCreativeTab;
 import org.slf4j.Logger;
@@ -56,6 +58,7 @@ public class StratoBlade {
         StratoBlocks.register(modEventBus);
         ExoItems.register(modEventBus);
         ExoEffects.register(modEventBus);
+        ExoEntities.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

@@ -1,6 +1,8 @@
 package net.johntdex.stratoblade.item;
 
 import net.johntdex.stratoblade.StratoBlade;
+import net.johntdex.stratoblade.item.custom.BleedingWeaponItem;
+import net.johntdex.stratoblade.item.custom.HatchetItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -8,14 +10,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.ItemLore;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import org.w3c.dom.Attr;
 
 import java.util.List;
 
@@ -94,11 +94,13 @@ public class ExoItems {
                     .attributes(AxeItem.createAttributes(StratoToolTiers.CARBON_STEEL,
                             4.0f, -1.8f))
                     .rarity(Rarity.UNCOMMON)));
-    public static final DeferredItem<AxeItem> CARBON_STEEL_HATCHET = ITEMS.register("carbon_steel_hatchet",
-            () -> new AxeItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
+    public static final DeferredItem<HatchetItem> CARBON_STEEL_HATCHET = ITEMS.register("carbon_steel_hatchet",
+            () -> new HatchetItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
                     .attributes(AxeItem.createAttributes(StratoToolTiers.CARBON_STEEL,
                             3.0f, -2.6f))
-                    .rarity(Rarity.UNCOMMON)));
+                    .rarity(Rarity.UNCOMMON)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.carbon_steel_hatchet")
+                            .withStyle(ChatFormatting.GRAY))))));
     public static final DeferredItem<SwordItem> CARBON_STEEL_SPEAR = ITEMS.register("carbon_steel_spear",
             () -> new SwordItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
                     .attributes(ItemAttributeModifiers.builder()
@@ -113,7 +115,9 @@ public class ExoItems {
                                     1.0, AttributeModifier.Operation.ADD_VALUE),
                                     EquipmentSlotGroup.MAINHAND)
                                     .build())
-                    .rarity(Rarity.UNCOMMON)));
+                    .rarity(Rarity.UNCOMMON)
+            .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.carbon_steel_spear")
+                    .withStyle(ChatFormatting.GRAY))))));;
 
     // Exorium
     public static final DeferredItem<SwordItem> EXORIUM_SWORD = ITEMS.register("exorium_sword",

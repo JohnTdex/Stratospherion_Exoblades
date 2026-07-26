@@ -1,4 +1,4 @@
-package net.johntdex.stratoblade.item;
+package net.johntdex.stratoblade.item.custom;
 
 import net.johntdex.stratoblade.effect.ExoEffects;
 import net.minecraft.world.effect.MobEffectInstance;
