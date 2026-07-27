@@ -18,6 +18,12 @@ public class ExoEntities {
             .clientTrackingRange(4)
                     .updateInterval(5)
             .build("hatchet_projectile"));
+    public static final Supplier<EntityType<ExoriumAxeProjectileEntity>> EXORIUM_AXE_PROJECTILE = ENTITIES.register("exorium_axe_projectile",
+            () -> EntityType.Builder.<ExoriumAxeProjectileEntity>of(ExoriumAxeProjectileEntity::new, MobCategory.MISC)
+            .sized(0.5f, 0.5f)
+            .clientTrackingRange(4)
+            .updateInterval(5)
+            .build("exorium_axe_projectile"));
 
     public static void register(IEventBus bus) {
         ENTITIES.register(bus);

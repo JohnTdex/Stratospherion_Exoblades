@@ -1,6 +1,8 @@
 package net.johntdex.stratoblade;
 
+import net.johntdex.stratoblade.client.model.ExoriumAxeModel;
 import net.johntdex.stratoblade.client.model.HatchetModel;
+import net.johntdex.stratoblade.client.renderer.ExoriumAxeProjectileRenderer;
 import net.johntdex.stratoblade.client.renderer.HatchetProjectileRenderer;
 import net.johntdex.stratoblade.entity.ExoEntities;
 import net.minecraft.client.Minecraft;
@@ -35,10 +37,12 @@ public class StratoBladeModClient {
     @SubscribeEvent
     static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(HatchetModel.LAYER_LOCATION, HatchetModel::createBodyLayer);
+        event.registerLayerDefinition(ExoriumAxeModel.LAYER_LOCATION, ExoriumAxeModel::createBodyLayer);
     }
 
     @SubscribeEvent
     static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ExoEntities.HATCHET_PROJECTILE.get(), HatchetProjectileRenderer::new);
+        event.registerEntityRenderer(ExoEntities.EXORIUM_AXE_PROJECTILE.get(), ExoriumAxeProjectileRenderer::new);
     }
 }

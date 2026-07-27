@@ -2,6 +2,8 @@ package net.johntdex.stratoblade.item;
 
 import net.johntdex.stratoblade.StratoBlade;
 import net.johntdex.stratoblade.item.custom.BleedingWeaponItem;
+import net.johntdex.stratoblade.item.custom.ExoriumAxeItem;
+import net.johntdex.stratoblade.item.custom.ExoriumSwordItem;
 import net.johntdex.stratoblade.item.custom.HatchetItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
@@ -40,6 +42,7 @@ public class ExoItems {
     public static final DeferredItem<Item> MACHETE_MOLDER = ITEMS.register("machete_molder", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> HATCHET_MOLDER = ITEMS.register("hatchet_molder", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SPEAR_MOLDER = ITEMS.register("spear_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EXORIUM_SWORD_MOLDER = ITEMS.register("exorium_sword_molder", () -> new Item(new Item.Properties()));
 
     //This is for the Steel Tools
     public static final DeferredItem<SwordItem> STEEL_SWORD = ITEMS.register("steel_sword",
@@ -88,7 +91,7 @@ public class ExoItems {
                     .rarity(Rarity.UNCOMMON)
                     .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.carbon_steel_dagger")
                             .withStyle(ChatFormatting.GRAY)))),
-                    0.30f, 100, 0));
+                    0.20f, 100, 0));
     public static final DeferredItem<AxeItem> CARBON_STEEL_MACHETE = ITEMS.register("carbon_steel_machete",
             () -> new AxeItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
                     .attributes(AxeItem.createAttributes(StratoToolTiers.CARBON_STEEL,
@@ -121,15 +124,26 @@ public class ExoItems {
 
     // Exorium
     public static final DeferredItem<SwordItem> EXORIUM_SWORD = ITEMS.register("exorium_sword",
-            () -> new SwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
+            () -> new ExoriumSwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
                     .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM,
                             4f, -1.8f))
-                    .rarity(Rarity.EPIC)));
+                    .rarity(Rarity.EPIC)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_sword")
+                    ,Component.translatable("tooltip.exoblade.exorium_sword_ability")
+                                    .withStyle(ChatFormatting.GRAY))))));
     public static final DeferredItem<SwordItem> EXORIUM_DAGGER = ITEMS.register("exorium_dagger",
-            () -> new SwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
+            () -> new BleedingWeaponItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
                     .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM,
-                            3.0f, -1.0f))
-                    .rarity(Rarity.EPIC)));
+                            0.5f, -1.0f))
+                    .rarity(Rarity.UNCOMMON)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_dagger")
+                            .withStyle(ChatFormatting.GRAY)))), 0.30f, 200, 1));
+    public static final DeferredItem<ExoriumAxeItem> EXORIUM_AXE = ITEMS.register("exorium_axe",
+            () -> new ExoriumAxeItem(StratoToolTiers.EXORIUM, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(StratoToolTiers.EXORIUM, 4f, -2.2f))
+                    .rarity(Rarity.EPIC)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_axe")
+                            .withStyle(ChatFormatting.GRAY))))));
 
 
 

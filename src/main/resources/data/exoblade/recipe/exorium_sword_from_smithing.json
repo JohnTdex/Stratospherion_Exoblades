@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "exoblade:exorium_ingot"
+  },
+  "addition": {
+    "item": "exoblade:carbon_handle"
+  },
+  "template": {
+    "item": "exoblade:exorium_sword_molder"
+  },
+  "result": {
+    "id": "exoblade:exorium_sword"
+  }
+}

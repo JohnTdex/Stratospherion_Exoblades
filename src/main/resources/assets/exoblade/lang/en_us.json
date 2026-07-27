@@ -15,6 +15,7 @@
   "item.exoblade.machete_molder": "Machete Molder",
   "item.exoblade.hatchet_molder": "Hatchet Molder",
   "item.exoblade.spear_molder": "Spear Molder",
+  "item.exoblade.exorium_sword_molder": "Exorium Sword Molder",
   "item.exoblade.steel_sword": "Steel Sword",
   "item.exoblade.steel_pickaxe": "Steel Pickaxe",
   "item.exoblade.steel_axe": "Steel Axe",
@@ -29,6 +30,7 @@
   "item.exoblade.carbon_steel_spear": "Carbon Steel Spear",
   "item.exoblade.exorium_sword": "Exorium Sword",
   "item.exoblade.exorium_dagger": "Exorium Dagger",
+  "item.exoblade.exorium_axe": "Exorium Axe",
 
   "block.exoblade.steel_block": "Steel Block",
   "block.exoblade.exorium_block": "Exorium Block",
@@ -38,13 +40,20 @@
   "effect.exoblade.bleeding": "Bleeding",
   "effect.exoblade.bleeding.desc": "Causes the target to bleed over time.",
 
-  "entity.exoblade.hatchet_projectile": "Hatchet Projectile",
+  "entity.exoblade.hatchet_projectile": "Carbon Steel Hatchet",
+  "entity.exoblade.exorium_axe_projectile": "Exorium Axe",
 
   "death.attack.exoblade.bleeding": "%1$s bled to death",
   "death.attack.exoblade.bleeding.player": "%1$s bled to death whilst fighting %2$s",
 
   "tooltip.exoblade.carbon_steel_scythe": "A scythe made of carbon steel, known for its durability and sharpness. Has built in sweeping edge for AOE attacks.",
-  "tooltip.exoblade.carbon_steel_dagger": "A dagger made of carbon steel, known for its durability and sharpness. Has 30% chance of bleeding effect on enemies.",
+  "tooltip.exoblade.carbon_steel_dagger": "A dagger made of carbon steel, known for its durability and sharpness. Has 20% chance of bleeding effect on enemies.",
   "tooltip.exoblade.carbon_steel_hatchet": "Throwable Axe that can still be used for everyday lumbering.",
-  "tooltip.exoblade.carbon_steel_spear": "Primitive yet can poke enemies as far as 4 blocks away."
+  "tooltip.exoblade.carbon_steel_spear": "Primitive yet can poke enemies as far as 4 blocks away.",
+  "tooltip.exoblade.exorium_sword": "A short burst of adrenaline surges through your veins as you cling to this sword",
+  "tooltip.exoblade.exorium_sword_ability": "Right-click to gain 10 seconds of speed and jump boost. Cooldown 20s ",
+  "tooltip.exoblade.exorium_dagger": "An exotic blade that opens wounds that will not easily close. 30% chance to inflict Bleeding II.",
+  "tooltip.exoblade.exorium_axe": "A powerful Axe that can summon a lightning strike upon enemy hit.",
+
+  "sounds.exorium_sword_use": "Exorium blade hums"
 }
