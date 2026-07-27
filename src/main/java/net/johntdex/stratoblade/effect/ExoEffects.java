@@ -11,6 +11,7 @@ public class ExoEffects {
     public static final DeferredRegister<MobEffect> EFFECTS = DeferredRegister.create(Registries.MOB_EFFECT, StratoBlade.MODID);
 
     public static final Holder<MobEffect> BLEEDING = EFFECTS.register("bleeding", BleedingEffect::new);
+    public static final Holder<MobEffect> ELECTROCUTION = EFFECTS.register("electrocution", ElectrocutionEffect::new);
 
     public static void register(IEventBus bus) {
         EFFECTS.register(bus);
