@@ -5,6 +5,9 @@ import net.johntdex.stratoblade.client.model.HatchetModel;
 import net.johntdex.stratoblade.client.renderer.ExoriumAxeProjectileRenderer;
 import net.johntdex.stratoblade.client.renderer.HatchetProjectileRenderer;
 import net.johntdex.stratoblade.entity.ExoEntities;
+import net.johntdex.stratoblade.particle.BleedingParticles;
+import net.johntdex.stratoblade.particle.ElectrocutionParticles;
+import net.johntdex.stratoblade.particle.ExoParticles;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -13,6 +16,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
@@ -38,6 +42,12 @@ public class StratoBladeModClient {
     static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(HatchetModel.LAYER_LOCATION, HatchetModel::createBodyLayer);
         event.registerLayerDefinition(ExoriumAxeModel.LAYER_LOCATION, ExoriumAxeModel::createBodyLayer);
+    }
+
+    @SubscribeEvent
+    static void registerParticleFactories(RegisterParticleProvidersEvent event) {
+        event.registerSpriteSet(ExoParticles.ELECTROCUTION_PARTICLES.get(), ElectrocutionParticles.Provider::new);
+        event.registerSpriteSet(ExoParticles.BLEEDING_PARTICLES.get(), BleedingParticles.Provider::new);
     }
 
     @SubscribeEvent

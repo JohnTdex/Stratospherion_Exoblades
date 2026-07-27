@@ -33,7 +33,7 @@ public class ExoItems {
     public static final DeferredItem<Item> UNSTABLE_EXORIUM_INGOT = ITEMS.register("unstable_exorium_ingot", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
     public static final DeferredItem<Item> EXORIUM_INGOT = ITEMS.register("exorium_ingot", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
     public static final DeferredItem<Item> CARBON_STEEL = ITEMS.register("carbon_steel", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final DeferredItem<Item> SILICON = ITEMS.register("silicon", () -> new Item(new Item.Properties()));
+    //public static final DeferredItem<Item> SILICON = ITEMS.register("silicon", () -> new Item(new Item.Properties()));
     //public static final DeferredItem<Item> PRISMAL_EXCORE = ITEMS.register("prismal_excore", () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
     public static final DeferredItem<Item> SWORD_MOLDER = ITEMS.register("sword_molder", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> KATANA_MOLDER = ITEMS.register("katana_molder", () -> new Item(new Item.Properties()));

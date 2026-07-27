@@ -39,12 +39,16 @@
 
   "effect.exoblade.bleeding": "Bleeding",
   "effect.exoblade.bleeding.desc": "Causes the target to bleed over time.",
+  "effect.exoblade.electrocution": "Electrocution",
+  "effect.exoblade.electrocution.desc": "When hit by an Exorium Axe, the entity gets struck by lightning and has chances of affecting nearby mobs with electrocution",
 
   "entity.exoblade.hatchet_projectile": "Carbon Steel Hatchet",
   "entity.exoblade.exorium_axe_projectile": "Exorium Axe",
 
   "death.attack.exoblade.bleeding": "%1$s bled to death",
   "death.attack.exoblade.bleeding.player": "%1$s bled to death whilst fighting %2$s",
+  "death.attack.exoblade.electrocution": "%1$s electrocuted to death",
+  "death.attack.exoblade.electrocution.player": "%1$s electrocuted to death whilst fighting %2$s",
 
   "tooltip.exoblade.carbon_steel_scythe": "A scythe made of carbon steel, known for its durability and sharpness. Has built in sweeping edge for AOE attacks.",
   "tooltip.exoblade.carbon_steel_dagger": "A dagger made of carbon steel, known for its durability and sharpness. Has 20% chance of bleeding effect on enemies.",

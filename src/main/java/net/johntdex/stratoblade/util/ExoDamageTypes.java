@@ -9,4 +9,6 @@ import net.minecraft.world.damagesource.DamageType;
 public class ExoDamageTypes {
     public static final ResourceKey<DamageType> BLEEDING = ResourceKey.create(Registries.DAMAGE_TYPE,
             ResourceLocation.fromNamespaceAndPath(StratoBlade.MODID, "bleeding"));
+    public static final ResourceKey<DamageType> ELECTROCUTION = ResourceKey.create(Registries.DAMAGE_TYPE,
+            ResourceLocation.fromNamespaceAndPath(StratoBlade.MODID, "electrocution"));
 }

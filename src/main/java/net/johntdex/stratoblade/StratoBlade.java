@@ -6,7 +6,11 @@ import net.johntdex.stratoblade.entity.ExoEntities;
 import net.johntdex.stratoblade.event.ExoEvents;
 import net.johntdex.stratoblade.item.ExoItems;
 import net.johntdex.stratoblade.item.StratoBladeCreativeTab;
+import net.johntdex.stratoblade.particle.ExoParticles;
 import net.johntdex.stratoblade.sound.ExoSounds;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -61,6 +65,7 @@ public class StratoBlade {
         ExoEffects.register(modEventBus);
         ExoEntities.register(modEventBus);
         ExoSounds.register(modEventBus);
+        ExoParticles.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

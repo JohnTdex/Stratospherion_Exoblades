@@ -101,12 +101,14 @@ public class ExoriumAxeProjectileEntity extends ThrownAxeEntity {
 
         for (LivingEntity victim : level.getEntitiesOfClass(LivingEntity.class,
                 struck.getBoundingBox().inflate(SPLASH_RADIUS),
-                candidate -> candidate.isAlive() && candidate != owner)) {
+                candidate -> candidate.isAlive() && (candidate != owner || candidate == struck))) {
 
             victim.addEffect(new MobEffectInstance(ExoEffects.ELECTROCUTION, ELECTROCUTION_TICKS, 0),
                     owner);
-            victim.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, SLOWNESS_TICKS, 1),
-                    owner);
+            // (ambient, visible, showIcon) — visible=false suppresses Slowness's own swirl
+            // particles so only our electrocution sparks show, while keeping its HUD icon.
+            victim.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, SLOWNESS_TICKS, 1,
+                    false, false, true), owner);
         }
     }
 

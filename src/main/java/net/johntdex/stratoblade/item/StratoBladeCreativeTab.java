@@ -26,7 +26,7 @@ public class StratoBladeCreativeTab {
                 output.accept(ExoItems.CARBON_STEEL.get());
                 output.accept(ExoItems.UNSTABLE_EXORIUM_INGOT.get());
                 output.accept(ExoItems.EXORIUM_INGOT.get());
-                output.accept(ExoItems.SILICON.get());
+                //output.accept(ExoItems.SILICON.get());
                 //output.accept(ExoItems.PRISMAL_EXCORE.get());
                 output.accept(ExoItems.REINFORCED_STICK.get());
                 output.accept(ExoItems.CARBON_HANDLE.get());

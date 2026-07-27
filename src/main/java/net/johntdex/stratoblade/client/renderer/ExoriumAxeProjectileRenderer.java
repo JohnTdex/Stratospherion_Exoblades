@@ -45,7 +45,7 @@ public class ExoriumAxeProjectileRenderer extends EntityRenderer<ExoriumAxeProje
         //   0.6F  -> axe head on the hitbox (head cubes are near ~9.5px)
         //   1.05F -> whole model centred (midpoint ~16.75px / 16)
         // The root also carries a small Z offset, so a slight Z here may help.
-        poseStack.translate(0.0F, 1.05F, 0.0F);
+        poseStack.translate(0.0F, 0.9F, 0.3F);
         poseStack.scale(-1.0F, -1.0F, 1.0F);
         this.model.renderToBuffer(poseStack, vc, packedLight, OverlayTexture.NO_OVERLAY);
 
