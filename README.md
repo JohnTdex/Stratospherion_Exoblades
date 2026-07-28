@@ -30,9 +30,14 @@ This mod brings new weapons and materials that aims to assist and dominate the f
 * Add Steel Tools ✅
 * Add Carbon Steel Weaponries ✅
 * Add Exorium Weaponries✅
+* Add Tier II Exorium weapon
+* Add slot mechanic via workbench for customizable abilities for a weapon
 * Add own workbench for weaponry crafting
-* Considering Ore Generations
+* (Considering Ore Generations)
 * Advanced Weapon abilities
+* Add Amethyst Geode Locator
+* Add Recharging Station Block for weapons
+* (Add GUI Overlay?)
 ---------------------------
 <h1>USAGE:</h1>
 
