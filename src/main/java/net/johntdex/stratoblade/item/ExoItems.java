@@ -41,6 +41,13 @@ public class ExoItems {
     public static final DeferredItem<Item> HATCHET_MOLDER = ITEMS.register("hatchet_molder", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SPEAR_MOLDER = ITEMS.register("spear_molder", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> EXORIUM_SWORD_MOLDER = ITEMS.register("exorium_sword_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EXORIUM_KATANA_MOLDER = ITEMS.register("exorium_katana_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EXORIUM_DAGGER_MOLDER = ITEMS.register("exorium_dagger_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EXORIUM_MACHETE_MOLDER = ITEMS.register("exorium_machete_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EXORIUM_SPEAR_MOLDER = ITEMS.register("exorium_spear_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EXORIUM_SCYTHE_MOLDER = ITEMS.register("exorium_scythe_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EXORIUM_HAMMER_MOLDER = ITEMS.register("exorium_hammer_molder", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EXORIUM_AXE_MOLDER = ITEMS.register("exorium_axe_molder", () -> new Item(new Item.Properties()));
 
     //This is for the Steel Tools
     public static final DeferredItem<SwordItem> STEEL_SWORD = ITEMS.register("steel_sword",
@@ -142,6 +149,31 @@ public class ExoItems {
                     .rarity(Rarity.EPIC)
                     .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_axe")
                             .withStyle(ChatFormatting.GRAY))))));
+    public static final DeferredItem<SwordItem> EXORIUM_SPEAR = ITEMS.register("exorium_spear",
+            () -> new SwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM, 3f, -2.0f))
+                    .rarity(Rarity.EPIC)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_spear"))))));
+    public static final DeferredItem<AxeItem> EXORIUM_MACHETE = ITEMS.register("exorium_machete",
+            () -> new AxeItem(StratoToolTiers.EXORIUM, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(StratoToolTiers.EXORIUM, 4f, -1.7f))
+                    .rarity(Rarity.EPIC)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_machete"))))));
+    public static final DeferredItem<SwordItem> EXORIUM_SCYTHE = ITEMS.register("exorium_scythe",
+            () -> new SwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM, 7f, -1.9f))
+                    .rarity(Rarity.EPIC)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_scythe"))))));
+    public static final DeferredItem<SwordItem> EXORIUM_HAMMER = ITEMS.register("exorium_hammer",
+            () -> new SwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM, 8f, -2.8f))
+                    .rarity(Rarity.EPIC)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_hammer"))))));
+    public static final DeferredItem<SwordItem> EXORIUM_KATANA = ITEMS.register("exorium_katana",
+            () -> new SwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM, 5f, -1.4f))
+                    .rarity(Rarity.EPIC)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_katana"))))));
 
 
 

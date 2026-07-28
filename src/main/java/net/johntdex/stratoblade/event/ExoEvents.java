@@ -15,5 +15,8 @@ public class ExoEvents {
         if (event.getEntity().getMainHandItem().is(ExoItems.CARBON_STEEL_SCYTHE.get())) {
             event.setSweeping(true);
         }
+        if (event.getEntity().getMainHandItem().is(ExoItems.EXORIUM_SCYTHE.get())) {
+            event.setSweeping(true);
+        }
     }
 }
