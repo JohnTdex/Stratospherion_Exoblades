@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "exoblade:carbon_steel"
+    "item": "stratocore:carbon_steel"
   },
   "addition": {
     "item": "exoblade:carbon_handle"

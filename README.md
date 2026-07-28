@@ -24,13 +24,16 @@ This mod brings new weapons and materials that aims to assist and dominate the f
  * Weapon Abilities
  * Materials are purely craftable/smelted to prevent world corruption when mod is removed from leftover ore generations.
 
+<h1>REQUIREMENTS:</h1>
+This mod needs Stratospherion Core as the materials needed for this mod is inside that mod.
+
 <h1>TO DO LIST:</h1>
 
 * Add materials ✅
 * Add Steel Tools ✅
 * Add Carbon Steel Weaponries ✅
 * Add Exorium Weaponries✅
-* Add Tier II Exorium weapon
+* Add Advanced Exorium weapon
 * Add slot mechanic via workbench for customizable abilities for a weapon
 * Add own workbench for weaponry crafting
 * (Considering Ore Generations)
@@ -38,6 +41,7 @@ This mod brings new weapons and materials that aims to assist and dominate the f
 * Add Amethyst Geode Locator
 * Add Recharging Station Block for weapons
 * (Add GUI Overlay?)
+* Lore book(?)
 ---------------------------
 <h1>USAGE:</h1>
 

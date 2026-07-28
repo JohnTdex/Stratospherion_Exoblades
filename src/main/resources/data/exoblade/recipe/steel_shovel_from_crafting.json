@@ -6,7 +6,7 @@
       "item": "exoblade:reinforced_stick"
     },
     "X": {
-      "item": "exoblade:steel_ingot"
+      "tag": "c:ingots/steel"
     }
   },
   "pattern": [

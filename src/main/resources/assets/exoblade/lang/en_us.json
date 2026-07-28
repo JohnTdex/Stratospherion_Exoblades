@@ -1,11 +1,7 @@
 {
-  "item.exoblade.steel_ingot": "Steel Ingot",
-  "item.exoblade.impure_steel": "Impure Steel",
-  "item.exoblade.carbon_steel": "Carbon Steel",
+
   "item.exoblade.reinforced_stick": "Reinforced Stick",
   "item.exoblade.carbon_handle": "Carbon Handle",
-  "item.exoblade.unstable_exorium_ingot": "Unstable Exorium Ingot",
-  "item.exoblade.exorium_ingot": "Exorium Ingot",
   "item.exoblade.prismal_excore": "Prismal Excore",
   "item.exoblade.silicon": "Silicon",
   "item.exoblade.sword_molder": "Sword Molder",
@@ -32,8 +28,6 @@
   "item.exoblade.exorium_dagger": "Exorium Dagger",
   "item.exoblade.exorium_axe": "Exorium Axe",
 
-  "block.exoblade.steel_block": "Steel Block",
-  "block.exoblade.exorium_block": "Exorium Block",
 
   "creativetab.stratoblade.stratoblade_tab": "Exoblade",
 

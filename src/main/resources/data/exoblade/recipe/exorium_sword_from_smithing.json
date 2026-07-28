@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "exoblade:exorium_ingot"
+    "item": "stratocore:exorium_ingot"
   },
   "addition": {
     "item": "exoblade:carbon_handle"

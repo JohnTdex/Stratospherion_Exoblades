@@ -8,7 +8,7 @@
   ],
   "key": {
     "S": {
-      "item": "exoblade:steel_ingot"
+      "tag": "c:ingots/steel"
     },
     "A": {
       "item": "minecraft:amethyst_shard"
@@ -17,7 +17,7 @@
       "item": "exoblade:sword_molder"
     },
     "E": {
-      "item": "exoblade:exorium_ingot"
+      "item": "stratocore:exorium_ingot"
     }
   },
   "result": {

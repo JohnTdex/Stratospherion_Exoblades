@@ -1,7 +1,6 @@
 package net.johntdex.stratoblade.item;
 
 import net.johntdex.stratoblade.StratoBlade;
-import net.johntdex.stratoblade.block.StratoBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,16 +15,10 @@ public class StratoBladeCreativeTab {
 
 
     public static final Supplier<CreativeModeTab> EXO_TAB = CREATIVE_MODE_TABS.register("stratoblade_tab", () -> CreativeModeTab.builder()
-            .icon(() -> new ItemStack(ExoItems.STEEL_INGOT.get()))
+            .icon(() -> new ItemStack(ExoItems.EXORIUM_SWORD.get()))
             .title(Component.translatable("creativetab.stratoblade.stratoblade_tab"))
             .displayItems(((itemDisplayParameters, output) -> {
-                output.accept(StratoBlocks.STEEL_BLOCK.get());
-                output.accept(StratoBlocks.EXORIUM_BLOCK.get());
-                output.accept(ExoItems.STEEL_INGOT.get());
-                output.accept(ExoItems.IMPURE_STEEL.get());
-                output.accept(ExoItems.CARBON_STEEL.get());
-                output.accept(ExoItems.UNSTABLE_EXORIUM_INGOT.get());
-                output.accept(ExoItems.EXORIUM_INGOT.get());
+
                 //output.accept(ExoItems.SILICON.get());
                 //output.accept(ExoItems.PRISMAL_EXCORE.get());
                 output.accept(ExoItems.REINFORCED_STICK.get());
@@ -53,7 +46,6 @@ public class StratoBladeCreativeTab {
                 output.accept(ExoItems.EXORIUM_SWORD.get());
                 output.accept(ExoItems.EXORIUM_DAGGER.get());
                 output.accept(ExoItems.EXORIUM_AXE.get());
-                output.accept(ExoItems.EXORIUM_INGOT.get());
 
             }))
             .build());

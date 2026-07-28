@@ -36,6 +36,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.SWORDS).add(ExoItems.CARBON_STEEL_SPEAR.get());
         tag(ItemTags.SWORDS).add(ExoItems.EXORIUM_SWORD.get());
         tag(ItemTags.SWORDS).add(ExoItems.EXORIUM_DAGGER.get());
+        tag(ItemTags.AXES).add(ExoItems.EXORIUM_AXE.get());
 
     }
 }

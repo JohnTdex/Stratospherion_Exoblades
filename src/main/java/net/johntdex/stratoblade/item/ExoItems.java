@@ -5,6 +5,7 @@ import net.johntdex.stratoblade.item.custom.BleedingWeaponItem;
 import net.johntdex.stratoblade.item.custom.ExoriumAxeItem;
 import net.johntdex.stratoblade.item.custom.ExoriumSwordItem;
 import net.johntdex.stratoblade.item.custom.HatchetItem;
+import net.johntdex.stratocore.item.StratoToolTiers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
@@ -25,14 +26,11 @@ public class ExoItems {
     // Create a Deferred Register to hold Items which will all be registered under the "exoblade" namespace
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(StratoBlade.MODID);
 
-    //These are for the items
-    public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final DeferredItem<Item> IMPURE_STEEL = ITEMS.register("impure_steel", () -> new Item(new Item.Properties()));
+    //These are for the item
+
     public static final DeferredItem<Item> CARBON_HANDLE = ITEMS.register("carbon_handle", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> REINFORCED_STICK = ITEMS.register("reinforced_stick", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> UNSTABLE_EXORIUM_INGOT = ITEMS.register("unstable_exorium_ingot", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> EXORIUM_INGOT = ITEMS.register("exorium_ingot", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
-    public static final DeferredItem<Item> CARBON_STEEL = ITEMS.register("carbon_steel", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+
     //public static final DeferredItem<Item> SILICON = ITEMS.register("silicon", () -> new Item(new Item.Properties()));
     //public static final DeferredItem<Item> PRISMAL_EXCORE = ITEMS.register("prismal_excore", () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
     public static final DeferredItem<Item> SWORD_MOLDER = ITEMS.register("sword_molder", () -> new Item(new Item.Properties()));

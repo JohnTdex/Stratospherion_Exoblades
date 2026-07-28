@@ -125,6 +125,10 @@ configurations {
 }
 
 dependencies {
+    // Stratospherion Core — shared materials, tool tiers and common tags.
+    // Rebuild core and re-copy this jar whenever core's API changes.
+    implementation files("libs/stratocore-1.0.0.jar")
+
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
