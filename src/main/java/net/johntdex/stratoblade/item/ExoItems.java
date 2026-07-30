@@ -131,6 +131,7 @@ public class ExoItems {
                             4f, -1.8f))
                     .rarity(Rarity.EPIC)
                     .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_sword")
+                                    .withStyle(ChatFormatting.GRAY)
                     ,Component.translatable("tooltip.exoblade.exorium_sword_ability")
                                     .withStyle(ChatFormatting.GRAY))))));
     public static final DeferredItem<SwordItem> EXORIUM_DAGGER = ITEMS.register("exorium_dagger",
@@ -150,7 +151,7 @@ public class ExoItems {
             () -> new SwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
                     .attributes(ItemAttributeModifiers.builder()
                             .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID, 3.0+
-                                            StratoToolTiers.CARBON_STEEL.getAttackDamageBonus(), AttributeModifier.Operation.ADD_VALUE),
+                                            StratoToolTiers.EXORIUM.getAttackDamageBonus(), AttributeModifier.Operation.ADD_VALUE),
                                     EquipmentSlotGroup.MAINHAND)
                             .add(Attributes.ATTACK_SPEED, new AttributeModifier(Item.BASE_ATTACK_SPEED_ID, -3.0,
                                             AttributeModifier.Operation.ADD_VALUE),
@@ -170,7 +171,7 @@ public class ExoItems {
                     //.component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_machete"))))));
     public static final DeferredItem<SwordItem> EXORIUM_SCYTHE = ITEMS.register("exorium_scythe",
             () -> new BleedingWeaponItem(StratoToolTiers.EXORIUM, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM, 7f, -1.9f))
+                    .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM, 6f, -1.9f))
                     .rarity(Rarity.EPIC)
                     .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_scythe")
                             .withStyle(ChatFormatting.GRAY)))), 0.50f, 40, 0));

@@ -31,13 +31,13 @@ public class StratoBladeCreativeTab {
                 output.accept(ExoItems.HATCHET_MOLDER.get());
                 output.accept(ExoItems.SPEAR_MOLDER.get());
                 output.accept(ExoItems.EXORIUM_SWORD_MOLDER.get());
-                output.accept(ExoItems.EXORIUM_KATANA_MOLDER.get());
-                output.accept(ExoItems.EXORIUM_DAGGER_MOLDER.get());
                 output.accept(ExoItems.EXORIUM_MACHETE_MOLDER.get());
-                output.accept(ExoItems.EXORIUM_SPEAR_MOLDER.get());
+                output.accept(ExoItems.EXORIUM_DAGGER_MOLDER.get());
+                output.accept(ExoItems.EXORIUM_KATANA_MOLDER.get());
                 output.accept(ExoItems.EXORIUM_SCYTHE_MOLDER.get());
-                output.accept(ExoItems.EXORIUM_HAMMER_MOLDER.get());
                 output.accept(ExoItems.EXORIUM_AXE_MOLDER.get());
+                output.accept(ExoItems.EXORIUM_HAMMER_MOLDER.get());
+                output.accept(ExoItems.EXORIUM_SPEAR_MOLDER.get());
                 output.accept(ExoItems.STEEL_SWORD.get());
                 output.accept(ExoItems.STEEL_PICKAXE.get());
                 output.accept(ExoItems.STEEL_AXE.get());
@@ -51,13 +51,12 @@ public class StratoBladeCreativeTab {
                 output.accept(ExoItems.CARBON_STEEL_HATCHET.get());
                 output.accept(ExoItems.CARBON_STEEL_SPEAR.get());
                 output.accept(ExoItems.EXORIUM_SWORD.get());
-                output.accept(ExoItems.EXORIUM_DAGGER.get());
-                output.accept(ExoItems.EXORIUM_AXE.get());
-                output.accept(ExoItems.EXORIUM_SPEAR.get());
-                output.accept(ExoItems.EXORIUM_HAMMER.get());
                 output.accept(ExoItems.EXORIUM_MACHETE.get());
+                output.accept(ExoItems.EXORIUM_DAGGER.get());
                 output.accept(ExoItems.EXORIUM_KATANA.get());
                 output.accept(ExoItems.EXORIUM_SCYTHE.get());
+                output.accept(ExoItems.EXORIUM_AXE.get());
+                output.accept(ExoItems.EXORIUM_SPEAR.get());
                 output.accept(ExoItems.EXORIUM_HAMMER.get());
 
             }))

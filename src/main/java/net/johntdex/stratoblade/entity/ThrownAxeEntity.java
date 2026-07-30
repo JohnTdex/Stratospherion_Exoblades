@@ -1,6 +1,7 @@
 package net.johntdex.stratoblade.entity;
 
 import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
@@ -10,6 +11,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
@@ -105,17 +107,28 @@ public abstract class ThrownAxeEntity extends AbstractArrow {
 
     // Deliberately does NOT call super.onHitEntity() — AbstractArrow's version applies its own
     // arrow damage and then discards the projectile. ThrownTrident replaces it for the same reason.
+    // We do reproduce its enchantment hooks, though, or thrown axes would ignore Sharpness etc.
     @Override
     protected void onHitEntity(EntityHitResult result) {
         Entity entity = result.getEntity();
         Entity owner = this.getOwner();
         DamageSource damageSource = this.damageSources().thrown(this, owner == null ? this : owner);
 
+        float damage = this.getImpactDamage();
+        if (this.level() instanceof ServerLevel serverLevel) {
+            damage = EnchantmentHelper.modifyDamage(serverLevel, this.getWeaponItem(), entity, damageSource, damage);
+        }
+
         this.dealtDamage = true;
 
-        if (entity.hurt(damageSource, this.getImpactDamage()) && entity instanceof LivingEntity living) {
-            this.doKnockback(living, damageSource);
-            this.doPostHurtEffects(living);
+        if (entity.hurt(damageSource, damage)) {
+            if (this.level() instanceof ServerLevel serverLevel) {
+                EnchantmentHelper.doPostAttackEffectsWithItemSource(serverLevel, entity, damageSource, this.getWeaponItem());
+            }
+            if (entity instanceof LivingEntity living) {
+                this.doKnockback(living, damageSource);
+                this.doPostHurtEffects(living);
+            }
         }
 
         this.applyOnHitEffects(entity, damageSource);
@@ -157,5 +170,10 @@ public abstract class ThrownAxeEntity extends AbstractArrow {
             case UP    -> groundedOffset = new Vec2(getFloorPitch(), this.getYRot() + 180.0F);
             case DOWN  -> groundedOffset = new Vec2(getCeilingPitch(), this.getYRot() + 180.0F);
         }
+    }
+
+    @Override
+    public ItemStack getWeaponItem() {
+        return this.getPickupItemStackOrigin();
     }
 }
