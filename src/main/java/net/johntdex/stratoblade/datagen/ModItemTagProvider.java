@@ -37,6 +37,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.SWORDS).add(ExoItems.EXORIUM_SWORD.get());
         tag(ItemTags.SWORDS).add(ExoItems.EXORIUM_DAGGER.get());
         tag(ItemTags.AXES).add(ExoItems.EXORIUM_AXE.get());
+        tag(ItemTags.SWORDS).add(ExoItems.EXORIUM_KATANA.get());
+        tag(ItemTags.SWORDS).add(ExoItems.EXORIUM_SCYTHE.get());
+        tag(ItemTags.SWORDS).add(ExoItems.EXORIUM_SPEAR.get());
+        tag(ItemTags.SWORDS).add(ExoItems.EXORIUM_HAMMER.get());
+        tag(ItemTags.AXES).add(ExoItems.EXORIUM_MACHETE.get());
 
     }
 }

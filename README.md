@@ -27,6 +27,9 @@ This mod brings new weapons and materials that aims to assist and dominate the f
 <h1>REQUIREMENTS:</h1>
 This mod needs Stratospherion Core as the materials needed for this mod is inside that mod.
 
+<h1>VERSION: ALPHA 0.1.0</h1>
+This mod is currently unbalanced and will need further polishing. Road map is under the TO DO LIST section.
+
 <h1>TO DO LIST:</h1>
 
 * Add materials ✅
@@ -34,6 +37,8 @@ This mod needs Stratospherion Core as the materials needed for this mod is insid
 * Add Carbon Steel Weaponries ✅
 * Add Exorium Weaponries✅
 * Add Advanced Exorium weapon
+* Rebalancing Abilities and Item Damage
+* Revamping recipes
 * Add slot mechanic via workbench for customizable abilities for a weapon
 * Add own workbench for weaponry crafting
 * (Considering Ore Generations)

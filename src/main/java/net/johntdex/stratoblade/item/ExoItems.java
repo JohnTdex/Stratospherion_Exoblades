@@ -1,10 +1,7 @@
 package net.johntdex.stratoblade.item;
 
 import net.johntdex.stratoblade.StratoBlade;
-import net.johntdex.stratoblade.item.custom.BleedingWeaponItem;
-import net.johntdex.stratoblade.item.custom.ExoriumAxeItem;
-import net.johntdex.stratoblade.item.custom.ExoriumSwordItem;
-import net.johntdex.stratoblade.item.custom.HatchetItem;
+import net.johntdex.stratoblade.item.custom.*;
 import net.johntdex.stratocore.item.StratoToolTiers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
@@ -125,7 +122,7 @@ public class ExoItems {
                                     .build())
                     .rarity(Rarity.UNCOMMON)
             .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.carbon_steel_spear")
-                    .withStyle(ChatFormatting.GRAY))))));;
+                    .withStyle(ChatFormatting.GRAY))))));
 
     // Exorium
     public static final DeferredItem<SwordItem> EXORIUM_SWORD = ITEMS.register("exorium_sword",
@@ -137,7 +134,7 @@ public class ExoItems {
                     ,Component.translatable("tooltip.exoblade.exorium_sword_ability")
                                     .withStyle(ChatFormatting.GRAY))))));
     public static final DeferredItem<SwordItem> EXORIUM_DAGGER = ITEMS.register("exorium_dagger",
-            () -> new BleedingWeaponItem(StratoToolTiers.CARBON_STEEL, new Item.Properties()
+            () -> new BleedingWeaponItem(StratoToolTiers.EXORIUM, new Item.Properties()
                     .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM,
                             0.5f, -1.0f))
                     .rarity(Rarity.UNCOMMON)
@@ -151,29 +148,43 @@ public class ExoItems {
                             .withStyle(ChatFormatting.GRAY))))));
     public static final DeferredItem<SwordItem> EXORIUM_SPEAR = ITEMS.register("exorium_spear",
             () -> new SwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM, 3f, -2.0f))
-                    .rarity(Rarity.EPIC)
-                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_spear"))))));
+                    .attributes(ItemAttributeModifiers.builder()
+                            .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID, 3.0+
+                                            StratoToolTiers.CARBON_STEEL.getAttackDamageBonus(), AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
+                            .add(Attributes.ATTACK_SPEED, new AttributeModifier(Item.BASE_ATTACK_SPEED_ID, -3.0,
+                                            AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
+                            .add(Attributes.ENTITY_INTERACTION_RANGE, new AttributeModifier(
+                                            ResourceLocation.fromNamespaceAndPath(StratoBlade.MODID, "spear_reach"),
+                                            2.0, AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
+                            .build())
+                    .rarity(Rarity.UNCOMMON)
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_spear")
+                            .withStyle(ChatFormatting.GRAY))))));
     public static final DeferredItem<AxeItem> EXORIUM_MACHETE = ITEMS.register("exorium_machete",
             () -> new AxeItem(StratoToolTiers.EXORIUM, new Item.Properties()
                     .attributes(AxeItem.createAttributes(StratoToolTiers.EXORIUM, 4f, -1.7f))
-                    .rarity(Rarity.EPIC)
-                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_machete"))))));
+                    .rarity(Rarity.EPIC)));
+                    //.component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_machete"))))));
     public static final DeferredItem<SwordItem> EXORIUM_SCYTHE = ITEMS.register("exorium_scythe",
-            () -> new SwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
+            () -> new BleedingWeaponItem(StratoToolTiers.EXORIUM, new Item.Properties()
                     .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM, 7f, -1.9f))
                     .rarity(Rarity.EPIC)
-                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_scythe"))))));
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_scythe")
+                            .withStyle(ChatFormatting.GRAY)))), 0.50f, 40, 0));
     public static final DeferredItem<SwordItem> EXORIUM_HAMMER = ITEMS.register("exorium_hammer",
-            () -> new SwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM, 8f, -2.8f))
+            () -> new StunningWeaponItem(StratoToolTiers.EXORIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM, 6f, -2.8f))
                     .rarity(Rarity.EPIC)
-                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_hammer"))))));
+                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_hammer")
+                            .withStyle(ChatFormatting.GRAY)))), 0.35f, 60, 0.50f));
     public static final DeferredItem<SwordItem> EXORIUM_KATANA = ITEMS.register("exorium_katana",
             () -> new SwordItem(StratoToolTiers.EXORIUM, new Item.Properties()
                     .attributes(SwordItem.createAttributes(StratoToolTiers.EXORIUM, 5f, -1.4f))
-                    .rarity(Rarity.EPIC)
-                    .component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_katana"))))));
+                    .rarity(Rarity.EPIC)));
+                    //.component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("tooltip.exoblade.exorium_katana"))))));
 
 
 

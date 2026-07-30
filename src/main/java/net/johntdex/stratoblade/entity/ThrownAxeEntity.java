@@ -7,6 +7,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -45,7 +46,10 @@ public abstract class ThrownAxeEntity extends AbstractArrow {
     protected ThrownAxeEntity(EntityType<? extends ThrownAxeEntity> entityType, LivingEntity shooter,
                               Level level, ItemStack thrownStack) {
         super(entityType, shooter, level, thrownStack, null);
-        this.pickup = Pickup.ALLOWED; // default is DISALLOWED — without this it can't be picked up
+        this.pickup = shooter instanceof Player player && player.hasInfiniteMaterials()
+                ? Pickup.CREATIVE_ONLY
+                : Pickup.ALLOWED;
+        // default is DISALLOWED — without this it can't be picked up
     }
 
     // ---- per-axe tuning knobs -------------------------------------------------------------
@@ -137,6 +141,7 @@ public abstract class ThrownAxeEntity extends AbstractArrow {
     @Override
     protected void onHitBlock(BlockHitResult result) {
         super.onHitBlock(result);
+        this.setSoundEvent(this.getDefaultHitGroundSoundEvent());
 
         hitFace = result.getDirection();
         hitHorizontalSurface = hitFace == Direction.UP || hitFace == Direction.DOWN;

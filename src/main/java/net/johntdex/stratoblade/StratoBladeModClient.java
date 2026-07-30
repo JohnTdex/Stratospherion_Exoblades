@@ -8,6 +8,7 @@ import net.johntdex.stratoblade.entity.ExoEntities;
 import net.johntdex.stratoblade.particle.BleedingParticles;
 import net.johntdex.stratoblade.particle.ElectrocutionParticles;
 import net.johntdex.stratoblade.particle.ExoParticles;
+import net.johntdex.stratoblade.particle.StunParticles;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -48,6 +49,7 @@ public class StratoBladeModClient {
     static void registerParticleFactories(RegisterParticleProvidersEvent event) {
         event.registerSpriteSet(ExoParticles.ELECTROCUTION_PARTICLES.get(), ElectrocutionParticles.Provider::new);
         event.registerSpriteSet(ExoParticles.BLEEDING_PARTICLES.get(), BleedingParticles.Provider::new);
+        event.registerSpriteSet(ExoParticles.STUN_PARTICLES.get(), StunParticles.Provider::new);
     }
 
     @SubscribeEvent

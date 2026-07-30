@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " E ",
+    "SMS",
+    " A "
+  ],
+  "key": {
+    "S": {
+      "tag": "c:ingots/steel"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "M": {
+      "item": "exoblade:katana_molder"
+    },
+    "E": {
+      "item": "stratocore:exorium_ingot"
+    }
+  },
+  "result": {
+    "id": "exoblade:exorium_katana_molder"
+  }
+}

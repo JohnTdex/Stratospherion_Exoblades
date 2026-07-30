@@ -1,6 +1,7 @@
 package net.johntdex.stratoblade.entity;
 
 import net.johntdex.stratoblade.item.ExoItems;
+import net.minecraft.core.Direction;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -18,6 +19,16 @@ public class HatchetProjectileEntity extends ThrownAxeEntity {
 
     public HatchetProjectileEntity(LivingEntity shooter, Level level, ItemStack thrownStack) {
         super(ExoEntities.HATCHET_PROJECTILE.get(), shooter, level, thrownStack);
+    }
+    @Override
+    protected float getWallYaw(Direction face) {
+        return switch (face) {
+            case SOUTH -> 0.0F;
+            case EAST -> 90.0F;
+            case NORTH -> 180.0F;
+            case WEST -> 270.0F;
+            default -> 0.0F;
+        };
     }
 
     @Override

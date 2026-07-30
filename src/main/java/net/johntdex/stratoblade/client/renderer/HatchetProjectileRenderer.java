@@ -46,7 +46,7 @@ public class HatchetProjectileRenderer extends EntityRenderer<HatchetProjectileE
         // for EVERY orientation, which is why no per-face offsets are needed.
         //   0.9F   -> blade sits on the hitbox (head is at ~14-15px)
         //   1.1875F-> whole model centred on the hitbox (midpoint 19px / 16)
-        poseStack.translate(0.0F, 1.1875F, 0.0F);
+        poseStack.translate(0.0F, 1.0F, 0.1F);
         poseStack.scale(-1.0F, -1.0F, 1.0F);
         this.model.renderToBuffer(poseStack, vc, packedLight, OverlayTexture.NO_OVERLAY);
 

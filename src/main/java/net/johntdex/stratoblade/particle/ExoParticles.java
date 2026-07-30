@@ -18,6 +18,9 @@ public class ExoParticles {
     public static final Supplier<SimpleParticleType> BLEEDING_PARTICLES = PARTICLE_TYPES.register("bleeding_particles",
             () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> STUN_PARTICLES = PARTICLE_TYPES.register("stun_particles",
+            () -> new SimpleParticleType(true));
+
     public static void register(IEventBus bus) {
         PARTICLE_TYPES.register(bus);
     }

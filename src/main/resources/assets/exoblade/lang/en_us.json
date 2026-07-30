@@ -47,6 +47,8 @@
   "effect.exoblade.bleeding.desc": "Causes the target to bleed over time.",
   "effect.exoblade.electrocution": "Electrocution",
   "effect.exoblade.electrocution.desc": "When hit by an Exorium Axe, the entity gets struck by lightning and has chances of affecting nearby mobs with electrocution",
+  "effect.exoblade.stun": "Stunned",
+  "effect.exoblade.stun.desc": "Unable to move, path or strike",
 
   "entity.exoblade.hatchet_projectile": "Carbon Steel Hatchet",
   "entity.exoblade.exorium_axe_projectile": "Exorium Axe",
@@ -64,6 +66,9 @@
   "tooltip.exoblade.exorium_sword_ability": "Right-click to gain 10 seconds of speed and jump boost. Cooldown 20s ",
   "tooltip.exoblade.exorium_dagger": "An exotic blade that opens wounds that will not easily close. 30% chance to inflict Bleeding II.",
   "tooltip.exoblade.exorium_axe": "A powerful Axe that can summon a lightning strike upon enemy hit.",
+  "tooltip.exoblade.exorium_hammer": "A strong Hammer that can concuss an enemy with a chance of disabling shields. Blocking prevents concussion effect",
+  "tooltip.exoblade.exorium_scythe": "Has built in sweeping edge for AOE attacks and 50% chance of bleeding I effect in a short duration.",
+  "tooltip.exoblade.exorium_spear": "Has 1 more reach longer than carbon steel spear",
 
   "sounds.exorium_sword_use": "Exorium blade hums"
 }
