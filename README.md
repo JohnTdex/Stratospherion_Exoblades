@@ -12,7 +12,7 @@
 </h1 align="center">
 
 
-<i>"Stratospherion is a Tech Corp from year 2080. It's mission was to explore, investigate, and research knowledge that bring the foundation of reality to its manifestation."</i>
+<i>"Stratospherion is a Tech Corp from year 2080. Its mission was to explore, investigate, and research knowledge that brings the foundation of reality to its manifestation."</i>
 
 This mod brings new weapons and materials that aims to assist and dominate the field for protection ~~(destruction)~~. Mainly built for futuristic/industrial theme gameplay.
 
