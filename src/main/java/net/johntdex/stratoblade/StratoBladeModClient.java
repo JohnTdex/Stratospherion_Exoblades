@@ -34,12 +34,6 @@ public class StratoBladeModClient {
     }
 
     @SubscribeEvent
-    static void onClientSetup(FMLClientSetupEvent event) {
-        // Some client setup code
-        StratoBlade.LOGGER.info("HELLO FROM CLIENT SETUP");
-        StratoBlade.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-    }
-    @SubscribeEvent
     static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(HatchetModel.LAYER_LOCATION, HatchetModel::createBodyLayer);
         event.registerLayerDefinition(ExoriumAxeModel.LAYER_LOCATION, ExoriumAxeModel::createBodyLayer);
