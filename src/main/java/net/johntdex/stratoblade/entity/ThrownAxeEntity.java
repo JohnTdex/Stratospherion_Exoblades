@@ -176,4 +176,11 @@ public abstract class ThrownAxeEntity extends AbstractArrow {
     public ItemStack getWeaponItem() {
         return this.getPickupItemStackOrigin();
     }
+
+    @Override
+    protected void tickDespawn() {
+        if (this.pickup != AbstractArrow.Pickup.ALLOWED) {
+            super.tickDespawn();
+        }
+    }
 }
